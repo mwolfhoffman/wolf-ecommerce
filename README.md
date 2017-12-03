@@ -1,4 +1,22 @@
 # wolf-ecommerce
-Quick and easy server side rendered e-commerce platform. Builds online stores quickly. 
+Created to buildy SSR e-commerce platform quickly. 
 
-Uses Keystone.js, node.js, pug, and stripe.js to quickly create online stores. 
+To run:
+
+1. ```npm i```
+
+2. Run MongoDB locally
+
+3. ```node keystone```
+
+Will need .env file with Cloudinary credentials. Option for mailgun (currently not used).
+
+
+Major dependencies 
+1. Node.js/express
+2. Cloudinary
+3. Pug (formerly Jade)
+4. Lodash
+5. Stipe.js 
+
+Highly customizable. Fork and use as needed. 
