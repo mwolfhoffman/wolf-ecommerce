@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+block intro
+	.container
+		h1 Products
+	
+block content
+	.container
+		.row
+			.col-xs-4.col-sm-3.col-md-3.text-center
+				if products.length
+					each item in products
+						h3
+							- var productUrl = 'products/' + item.title;
+							a(href='/'+productUrl)  #{item.title} 
+							br
+							if item.image.exists
+								a(href='')
+								img(src=item._.image.fit(160,160))
+						p= item.price
+				else
+					h3.text-muted There are no products in the store yet.
